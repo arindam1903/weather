@@ -11,7 +11,7 @@ const handleSearch=()=>{
 }
 
 const weather=(city)=>{
-   fetch(`http://api.weatherapi.com/v1/current.json?key=4c903aa7d32748d0b63183532211203&q=`+city)
+   fetch(`https://api.weatherapi.com/v1/current.json?key=4c903aa7d32748d0b63183532211203&q=`+city)
    .then(res=>res.json())
    .then(res=>display(res))
    .catch(()=>alert('City not found!'))
